@@ -5,7 +5,7 @@ const accessToken = localStorage.getItem('accessToken')
 axios.defaults.baseURL = 'localhost:3999'
 axios.defaults.headers.common['Authorization'] = accessToken
 
-const api = (method, endpoint, data) => {
+const request = (method, endpoint, data) => {
   return axios({
     method,
     url: endpoint,
@@ -13,4 +13,4 @@ const api = (method, endpoint, data) => {
   })
 }
 
-export default api
+export default request
