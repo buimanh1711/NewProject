@@ -20,8 +20,8 @@ function App() {
 
         </Route>
         <Route path='/'>
-
-        </Route>
+          {/* test manh */}
+        </Route>  
       </Switch>
     </div>
   );
